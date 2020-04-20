@@ -1,0 +1,41 @@
+@import './variables.css'
+
+html {
+	background-color: var(--primary-colour);
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	background-color: var(--primary-colour);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	font-weight: normal;
+	word-wrap: break-word;
+	font-kerning: normal;
+	-moz-font-feature-settings: "kern", "liga", "clig", "calt";
+	-ms-font-feature-settings: "kern", "liga", "clig", "calt";
+	-webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+	font-feature-settings: "kern", "liga", "clig", "calt";
+}
+
+h1, h2, h3 {
+	color: var(--highlight-colour);
+}
+
+p {
+	color: #FFF;
+}
+
+/*a:hover {*/
+  /* standard gradient background */
+  /*background: linear-gradient(var(--complement-colour), var(--tertiary-colour));*/
+
+  /* clip hackery */
+  /*-webkit-background-clip: text;*/
+  /*-webkit-text-fill-color: transparent;*/
+/*}*/

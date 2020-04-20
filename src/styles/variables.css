@@ -1,0 +1,13 @@
+:root {
+	--steel-blue: #388697;
+	--dark-slate-grey: #08415c;
+	--dim-grey: #545f66;
+	--light-pink: #ebbab9;
+	--ruby-red: #8b1e3f;
+
+    --primary-colour: var(--dark-slate-grey);
+    --secondary-colour: var(--steel-blue);
+    --tertiary-colour: var(--ruby-red);
+    --highlight-colour: var(--light-pink);
+    --complement-colour: var(--dim-grey);
+}
