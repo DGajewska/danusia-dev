@@ -17,12 +17,16 @@ p:last-child {
 	font-weight: bold;
 }
 
-a {
-	text-decoration: none;
+a, a:visited  {
+	color: var(--tertiary-colour);
+}
+
+a:hover {
+	color: var(--highlight-colour);
 }
 
 .contentArea {
-	margin: 3rem auto;
+	margin: 0 auto 3rem;
 	width: 66%;
 	max-width: 650px;
 }

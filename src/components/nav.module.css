@@ -1,6 +1,6 @@
 @import '../styles/variables.css';
 
-.menu {
+.tileMenu {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -14,7 +14,7 @@
 
 }
 
-.menuItem {
+.tileMenuItem {
 	background-color: var(--secondary-colour);
 	padding: 3px;
 	margin: 10px;
@@ -27,7 +27,7 @@
     transition-delay: 0.1s;
 }
 
-.menuItem a {
+.tileMenuItem a {
 	display: block;
 	font-size: 1.2em;
 	color: var(--highlight-colour);
@@ -38,52 +38,52 @@
 	border: 1.5px solid var(--primary-colour);
 	border-radius: 5px;
 	text-align: right;
+	text-decoration: none;
 }
 
-.menuItem:hover {
+.tileMenuItem:hover {
 	background-color: var(--tertiary-colour);
 }
 
 
+/*nav {
+	background: var(--primary-colour);
+	outline:none;
+	box-shadow: 0 3px 6px -1px darkslategrey;
+}*/
+
+
+.menu {	
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row;
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	width: 66%;
+	max-width: 650px;
+}
+
+.menuItem {
+	padding:0.5em 0 0.4em 0;
+	margin: 0 1em;
+	font-size:0.95em;
+	font-weight:regular;
+	cursor:pointer;	
+	border-bottom: 2px solid var(--secondary-colour);
+}
+
+.menuItem a {
+	color: var(--highlight-colour);
+	text-decoration: none;
+}
+
+.menuItem:hover {
+	border-bottom: 2px solid var(--tertiary-colour);
+}
+
 /* Mobile styles */
 @media screen and (max-width: 400px) {
-	nav {
-		background: var(--secondary-colour);
-		width:100%;
-		position:fixed;
-		float: right;
-		top:0;
-		outline:none;
-		box-shadow: 0 3px 6px -1px darkslategrey;
-	}
-
-
-	.menu {	
-		display: flex;
-		justify-content: flex-end;
-		flex-direction: row;
-		list-style: none;
-		padding: 0;
-		margin: 0;
-	}
-
-	.menuItem {
-		padding:0.5em 0 0.4em 0;
-		margin: 0 1em;
-		font-size:0.95em;
-		font-weight:regular;
-		cursor:pointer;	
-		border-bottom: 2px solid var(--secondary-colour);
-	}
-
-	.menuItem a {
-		color: var(--highlight-colour);
-		text-decoration: none;
-	}
-
-	.menuItem:hover {
-		border-bottom: 2px solid var(--highlight-colour);
-	}
 }
 
 

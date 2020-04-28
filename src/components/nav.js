@@ -3,19 +3,26 @@ import navStyles from "./nav.module.css"
 import { Link } from "gatsby"
 
 
-const ListLink = props => (
-	<li className={navStyles.menuItem} tabindex="0">
+const ListLink = props => {
+	console.log(props.classPrefix + 'Item')
+	return (
+	<li className={props.class} tabindex="0">
 		<Link to={props.to}>{props.children}</Link>
 	</li>
-)
+)}
 
-const Nav = () => {
+const Nav = props => {
+	const ulClass = props.tileMenu ? navStyles.tileMenu : navStyles.menu;
+	const ilClass = props.tileMenu ? navStyles.tileMenuItem : navStyles.menuItem;
+	console.log(props)
+	console.log('ulClass', ulClass)
+	console.log('ilClass', ilClass)
 	return (
 		<nav>
-			<ul className={navStyles.menu} tabindex="0">
-				<ListLink to="/">Home</ListLink>
-				<ListLink to="/about/">About</ListLink>
-				<ListLink to="/contact/">Contact</ListLink>
+			<ul className={ulClass} tabindex="0">
+				<ListLink to="/" class={ilClass}>Home</ListLink>
+				<ListLink to="/about/" class={ilClass}>About</ListLink>
+				<ListLink to="/contact/" class={ilClass}>Contact</ListLink>
 			</ul>
 		</nav>
 	)
