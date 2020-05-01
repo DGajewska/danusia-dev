@@ -4,29 +4,10 @@
 	background-color: var(--primary-colour);
 }
 
-h1 {
-	text-shadow: 5px 3px 0 var(--tertiary-colour);
-	text-align: left;
-	font-size: 5rem;
-	margin-bottom: 0;
-	padding-bottom: 0;
-}
-
-p:last-child {
-	font-size: 1.2rem;
-	font-weight: bold;
-}
-
-a, a:visited  {
-	color: var(--tertiary-colour);
-}
-
-a:hover {
-	color: var(--highlight-colour);
-}
-
 .contentArea {
+	position: absolute;
+	top: 80px;
+	left: 16%;
 	margin: 0 auto 3rem;
 	width: 66%;
-	max-width: 650px;
 }

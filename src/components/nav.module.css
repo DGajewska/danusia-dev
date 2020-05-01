@@ -29,7 +29,7 @@
 
 .tileMenuItem a {
 	display: block;
-	font-size: 1.2em;
+	font-size: 1.4em;
 	color: var(--highlight-colour);
 	font-variant-caps: small-caps;
 	height: 30px;
@@ -45,14 +45,6 @@
 	background-color: var(--tertiary-colour);
 }
 
-
-/*nav {
-	background: var(--primary-colour);
-	outline:none;
-	box-shadow: 0 3px 6px -1px darkslategrey;
-}*/
-
-
 .menu {	
 	display: flex;
 	justify-content: flex-end;
@@ -61,16 +53,15 @@
 	padding: 0;
 	margin: 0 auto;
 	width: 66%;
-	max-width: 650px;
 }
 
 .menuItem {
-	padding:0.5em 0 0.4em 0;
-	margin: 0 1em;
-	font-size:0.95em;
+	margin: 0 0.45em;
+	padding: 0.5em 0.55em 0.4em ;
+	font-size: 1.3em;
 	font-weight:regular;
 	cursor:pointer;	
-	border-bottom: 2px solid var(--secondary-colour);
+	border-bottom: 3px solid var(--secondary-colour);
 }
 
 .menuItem a {
@@ -79,7 +70,12 @@
 }
 
 .menuItem:hover {
-	border-bottom: 2px solid var(--tertiary-colour);
+	background-color: var(--highlight-colour);
+	border-bottom: 3px solid var(--primary-colour);
+}
+
+.menuItem:hover a {
+	color: var(--primary-colour);
 }
 
 /* Mobile styles */

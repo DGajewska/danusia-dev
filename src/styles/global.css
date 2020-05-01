@@ -29,6 +29,27 @@ h1, h2, h3 {
 
 p {
 	color: #fadddc;
+	font-size: 1.3rem;
+}
+
+p.large-text {
+	font-size: 1.6rem;
+	font-weight: bold;
+}
+
+p.caption {
+	margin: -10px 20px 0;
+	font-style: italic;
+	font-weight: 300;
+	color: var(--highlight-colour);
+}
+
+a, a:visited  {
+	color: var(--tertiary-colour);
+}
+
+a:hover {
+	color: var(--highlight-colour);
 }
 
 /*a:hover {*/

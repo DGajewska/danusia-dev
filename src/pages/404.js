@@ -1,11 +1,12 @@
 import React from "react"
 
 import Layout from "../components/layout"
+import Header from "../components/header"
 // import SEO from "../components/seo"
 
 const NotFoundPage = () => (
   <Layout tileMenu={false}>
-    <h1>NOT FOUND</h1>
+	  <Header headerTxt="Page not found" />
     <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
   </Layout>
 )
