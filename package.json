@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "Personal developer website",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "My first website using Gatsby and React",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "@DGajewska",
   "dependencies": {
     "gatsby": "^2.20.12",
     "gatsby-image": "^2.3.1",

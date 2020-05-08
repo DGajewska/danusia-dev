@@ -1,5 +1,5 @@
 import React from "react"
-import layoutStyles from "./layout.module.css"
+import "./layout.css"
 import Header from "./header.js"
 import Nav from "./nav.js"
 
@@ -11,13 +11,14 @@ const getNav = (displayMenu, props) => {
 
 const Layout = props => {
   return (
-  <div className={layoutStyles.layout}>
-    {getNav(!props.tileMenu, props)}
-    <div className={layoutStyles.contentArea}>
-      {props.children}
-      {getNav(props.tileMenu, props)}
+    <div className="layout">
+      {getNav(!props.tileMenu, props)}
+      <Header headerTxt={props.headerTxt} captionTxt={props.captionTxt} />
+      <div className="content-area">
+        {props.children}
+        {getNav(props.tileMenu, props)}
+      </div>
     </div>
-  </div>
 )}
 
 export default Layout

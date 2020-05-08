@@ -6,7 +6,7 @@ import Header from "../components/header"
 
 const IndexPage = () => (
   <Layout  tileMenu={true}>
-  <Header headerTxt="Welcome" captionTxt="I'm Dana and I'm a full stack developer" />
+  <Header headerTxt="Hello" captionTxt="I'm Dana and I'm a full stack developer" />
   	<section>
 	  	<p>
 	  		I'm at the start of my software development career with just over a year 

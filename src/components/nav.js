@@ -1,13 +1,13 @@
 import React from "react"
-import navStyles from "./nav.module.css"
+import "./nav.css"
 import { Link } from "gatsby"
 
 const getClasses = props => {
 	if (props.tileMenu) {
-		return { ulClass: navStyles.tileMenu, ilClass: navStyles.tileMenuItem }
+		return { ulClass: "menu__tile", ilClass: "menu-item__tile" }
 	}
 
-	return { ulClass: navStyles.menu, ilClass: navStyles.menuItem }
+	return { ulClass: "menu", ilClass: "menu-item" }
 }
 
 

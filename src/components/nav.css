@@ -1,6 +1,6 @@
 @import '../styles/variables.css';
 
-.tileMenu {
+.menu__tile {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -14,7 +14,7 @@
 
 }
 
-.tileMenuItem {
+.menu-item__tile {
 	background-color: var(--secondary-colour);
 	padding: 3px;
 	margin: 10px;
@@ -27,9 +27,9 @@
     transition-delay: 0.1s;
 }
 
-.tileMenuItem a {
+.menu-item__tile a {
 	display: block;
-	font-size: 1.4em;
+	font-size: 1.5em;
 	color: var(--highlight-colour);
 	font-variant-caps: small-caps;
 	height: 30px;
@@ -41,7 +41,7 @@
 	text-decoration: none;
 }
 
-.tileMenuItem:hover {
+.menu-item__tile:hover {
 	background-color: var(--tertiary-colour);
 }
 
@@ -50,12 +50,13 @@
 	justify-content: flex-end;
 	flex-direction: row;
 	list-style: none;
+	top: 0;
 	padding: 0;
 	margin: 0 auto;
 	width: 66%;
 }
 
-.menuItem {
+.menu-item {
 	margin: 0 0.45em;
 	padding: 0.5em 0.55em 0.4em ;
 	font-size: 1.3em;
@@ -64,17 +65,17 @@
 	border-bottom: 3px solid var(--secondary-colour);
 }
 
-.menuItem a {
+.menu-item a {
 	color: var(--highlight-colour);
 	text-decoration: none;
 }
 
-.menuItem:hover {
+.menu-item:hover {
 	background-color: var(--highlight-colour);
 	border-bottom: 3px solid var(--primary-colour);
 }
 
-.menuItem:hover a {
+.menu-item:hover a {
 	color: var(--primary-colour);
 }
 

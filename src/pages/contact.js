@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Header from "../components/header"
@@ -10,7 +9,7 @@ const ContactPage = () => (
     <Header headerTxt="Say hi" />
     <section>
         <p>If you'd like to get in touch, please do! Send me an email and say hello :)</p>
-        <p>danusia.x<i>[at]</i>outlook.com</p>
+        <p>danusia.x <i>[at]</i> outlook.com</p>
     </section>
   </Layout>
 )
